@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83399EE3-D5BD-78B7-8661-307211F9F30A" name="T_VB_PRODUTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-07 23:42:22 UTC</createdTime>
+<ownerDesignName>ProjetovendeBemDER</ownerDesignName>
+<engineerTo>
+<item key="D3841FF0-F0C1-6310-0089-B7877F005C1F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PRODUTO" id="F6041679-9AE9-D829-954E-A4A776BC75DE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-07 23:44:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[esse atributo irá receber p código do produto. Esse cdigo é chave única e obrigatória. esse será populado automaticamente pelo pelo sistema.]]></commentInRDBMS>
+<ownerDesignName>ProjetovendeBemDER</ownerDesignName>
+<engineerTo>
+<item key="D3841FF0-F0C1-6310-0089-B7877F005C1F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_PRECO_UNITARIO" id="DE06124B-B709-3370-4265-2F87633B9641">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-07 23:52:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[aqui os valores desse atributo refere-se ao valor do preço unitário do produto.Toda vez que o produto sofrer alteração de preço ,ele deve ser atulizado aqui. O conteúdo será obrigatório.]]></commentInRDBMS>
+<ownerDesignName>ProjetovendeBemDER</ownerDesignName>
+<engineerTo>
+<item key="D3841FF0-F0C1-6310-0089-B7877F005C1F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81980260-6C57-CE0A-C336-FE0B1C3462CC" name="T_VB_PRODUTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-03-07 23:56:17 UTC</createdTime>
+<ownerDesignName>ProjetovendeBemDER</ownerDesignName>
+<engineerTo>
+<item key="D3841FF0-F0C1-6310-0089-B7877F005C1F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F6041679-9AE9-D829-954E-A4A776BC75DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
